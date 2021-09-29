@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      {{ 'home.title' | customTranslate }}
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,23 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">{{ 'home.title' | customTranslate }} </ion-title>
     </ion-toolbar>
   </ion-header>
 
+  <ion-item>
+    <ion-label>{{ 'home.language' | customTranslate }}</ion-label>
+    <ion-select (ionChange)="changeLanguage($event)">
+      <ion-select-option *ngFor="let language of languages;" [value]="language">
+        {{language.name}}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <strong>{{ 'home.message1' | customTranslate }}</strong>
+    <p>{{ 'home.message2' | customTranslate:{name1: 'Ionic', name2: 'Angular', name3: 'Test'} }}</p>
+    <ion-button (click)="testTranslation()" color="primary">{{ 'home.testAlert' | customTranslate }}</ion-button>
   </div>
 </ion-content>

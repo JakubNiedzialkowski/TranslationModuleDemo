@@ -1,0 +1,14 @@
+{
+    "home":{
+        "title": "Tytuł",
+        "language": "Język strony",
+        "message1": "Gotowy do stworzenia aplikacji?",
+        "message2": "Zacznij z {{name1}} i {{name2}}",
+        "testAlert": "Naciśnij, aby przetestować funkcję translate serwisu"
+    },
+
+    "alert":{
+        "translationError": "Wystąpił błąd podczas tłumaczenia!",
+        "alertTest": "Testowanie tłumaczenia"
+    }
+}

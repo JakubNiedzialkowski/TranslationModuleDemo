@@ -1,0 +1,14 @@
+{
+    "home":{
+        "title": "Title",
+        "language": "Site language",
+        "message1": "Ready to create an app?",
+        "message2": "Start with {{name1}} and {{name2}}",
+        "testAlert": "Click to test service translate function"
+    },
+
+    "alert":{
+        "translationError": "An error occured during translation!",
+        "alertTest": "Testing translation"
+    }
+}

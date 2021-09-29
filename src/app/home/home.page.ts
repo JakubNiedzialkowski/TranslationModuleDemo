@@ -1,3 +1,5 @@
+import { ILanguage } from './../interfaces/ILanguage';
+import { CustomTranslateService } from './../services/customTranslate/custom-translate.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,7 +8,21 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  private languages:ILanguage[];
 
-  constructor() {}
+  constructor(private customTranslate:CustomTranslateService) {}
+
+  ngOnInit(){
+    this.languages = this.customTranslate.getLanguages();
+  }
+
+  private changeLanguage(event: CustomEvent): void {
+    let newLanguage:ILanguage = event.detail.value;
+    this.customTranslate.changeLanguage(newLanguage.code);
+  }
+
+  private testTranslation(): void{
+    alert(this.customTranslate.translate('alert.alertTest'));
+  }
 
 }
