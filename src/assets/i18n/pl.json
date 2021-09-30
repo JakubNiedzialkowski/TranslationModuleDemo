@@ -1,13 +1,17 @@
 {
-    "home":{
+    "home": {
         "title": "Tytuł",
         "language": "Język strony",
         "message1": "Gotowy do stworzenia aplikacji?",
         "message2": "Zacznij z {{name1}} i {{name2}}",
-        "testAlert": "Naciśnij, aby przetestować funkcję translate serwisu"
+        "testAlert": "Naciśnij, aby przetestować funkcję translate serwisu",
+        "testPage": "Otwórz stronę testową"
     },
-
-    "alert":{
+    "test": {
+        "title": "Tytuł testowy {{text}}",
+        "message1": "To jest strona testowa"
+    },
+    "alert": {
         "translationError": "Wystąpił błąd podczas tłumaczenia!",
         "alertTest": "Testowanie tłumaczenia"
     }

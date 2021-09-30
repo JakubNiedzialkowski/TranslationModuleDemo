@@ -21,11 +21,12 @@
       </ion-select-option>
     </ion-select>
   </ion-item>
-  
+
 
   <div id="container">
     <strong>{{ 'home.message1' | customTranslate }}</strong>
     <p>{{ 'home.message2' | customTranslate:{name1: 'Ionic', name2: 'Angular', name3: 'Test'} }}</p>
     <ion-button (click)="testTranslation()" color="primary">{{ 'home.testAlert' | customTranslate }}</ion-button>
+    <ion-button (click)="navigateToTestPage()" color="primary">{{ 'home.testPage' | customTranslate }}</ion-button>
   </div>
 </ion-content>

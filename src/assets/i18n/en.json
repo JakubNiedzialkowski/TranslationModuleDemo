@@ -1,13 +1,17 @@
 {
-    "home":{
+    "home": {
         "title": "Title",
         "language": "Site language",
         "message1": "Ready to create an app?",
         "message2": "Start with {{name1}} and {{name2}}",
-        "testAlert": "Click to test service translate function"
+        "testAlert": "Click to test service translate function",
+        "testPage": "Open test page"
     },
-
-    "alert":{
+    "test": {
+        "title": "Test title {{text}}",
+        "message1": "This is a test site"
+    },
+    "alert": {
         "translationError": "An error occured during translation!",
         "alertTest": "Testing translation"
     }

@@ -1,6 +1,7 @@
 import { ILanguage } from './../interfaces/ILanguage';
 import { CustomTranslateService } from './../services/customTranslate/custom-translate.service';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,21 +9,25 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  private languages:ILanguage[];
+  private languages: ILanguage[];
 
-  constructor(private customTranslate:CustomTranslateService) {}
+  constructor(private customTranslate: CustomTranslateService, private router: Router) { }
 
-  ngOnInit(){
+  ngOnInit() {
     this.languages = this.customTranslate.getLanguages();
   }
 
   private changeLanguage(event: CustomEvent): void {
-    let newLanguage:ILanguage = event.detail.value;
+    const newLanguage: ILanguage = event.detail.value;
     this.customTranslate.changeLanguage(newLanguage.code);
   }
 
-  private testTranslation(): void{
+  private testTranslation(): void {
     alert(this.customTranslate.translate('alert.alertTest'));
+  }
+
+  private navigateToTestPage(): void {
+    this.router.navigateByUrl('/test');
   }
 
 }
