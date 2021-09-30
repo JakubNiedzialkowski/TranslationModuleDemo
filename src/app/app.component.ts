@@ -1,4 +1,4 @@
-import { CustomTranslateService } from './services/customTranslate/custom-translate.service';
+import { CustomTranslateService } from './core/customTranslate/services/customTranslate/custom-translate.service';
 import { Component } from '@angular/core';
 
 @Component({

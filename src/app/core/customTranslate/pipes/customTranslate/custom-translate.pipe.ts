@@ -1,4 +1,4 @@
-import { CustomTranslateService } from './../../services/customTranslate/custom-translate.service';
+import { CustomTranslateService } from '../../services/customTranslate/custom-translate.service';
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({

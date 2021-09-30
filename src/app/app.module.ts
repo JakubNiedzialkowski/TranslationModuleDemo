@@ -1,4 +1,4 @@
-import { CustomTranslateService } from './services/customTranslate/custom-translate.service';
+import { CustomTranslateService } from './core/customTranslate/services/customTranslate/custom-translate.service';
 import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -8,8 +8,8 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { customTranslateFactory } from './services/customTranslate/translationFactory/custom-translate-factory';
-import { CustomPipesModule } from './modules/custom-pipes/custom-pipes.module';
+import { customTranslateFactory } from './core/customTranslate/services/customTranslate/translationFactory/custom-translate-factory';
+import { CustomPipesModule } from './core/customTranslate/modules/custom-pipes/custom-pipes.module';
 
 @NgModule({
   declarations: [AppComponent],

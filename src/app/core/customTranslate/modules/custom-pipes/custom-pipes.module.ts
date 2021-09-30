@@ -1,4 +1,4 @@
-import { CustomTranslatePipe } from './../../pipes/customTranslate/custom-translate.pipe';
+import { CustomTranslatePipe } from '../../pipes/customTranslate/custom-translate.pipe';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 

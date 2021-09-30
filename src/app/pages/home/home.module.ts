@@ -1,4 +1,4 @@
-import { CustomPipesModule } from './../modules/custom-pipes/custom-pipes.module';
+import { CustomPipesModule } from '../../core/customTranslate/modules/custom-pipes/custom-pipes.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';

@@ -1,5 +1,5 @@
-import { ILanguage } from './../interfaces/ILanguage';
-import { CustomTranslateService } from './../services/customTranslate/custom-translate.service';
+import { ILanguage } from '../../core/customTranslate/interfaces/ILanguage';
+import { CustomTranslateService } from '../../core/customTranslate/services/customTranslate/custom-translate.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 

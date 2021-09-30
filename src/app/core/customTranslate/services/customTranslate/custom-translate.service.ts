@@ -1,4 +1,4 @@
-import { ILanguage } from './../../interfaces/ILanguage';
+import { ILanguage } from '../../interfaces/ILanguage';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
