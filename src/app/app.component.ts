@@ -1,4 +1,4 @@
-import { CustomTranslateService } from './core/customTranslate/services/customTranslate/custom-translate.service';
+import { TranslateLoaderService } from './core/customTranslate/services/translateLoader/translate-loader.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(private customTranslate: CustomTranslateService) {
+  constructor(private customTranslateLoader: TranslateLoaderService) {
     this.initializeApp();
   }
 
-  private initializeApp(){
-    this.customTranslate.setInitialLanguage();
+  private initializeApp() {
+    this.customTranslateLoader.setInitialLanguage();
   }
 }
